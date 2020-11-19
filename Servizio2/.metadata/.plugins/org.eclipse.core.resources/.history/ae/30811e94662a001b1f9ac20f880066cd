@@ -1,0 +1,27 @@
+package com.fabio.rest.servizi;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.fabio.rest.bean.RichiestaBean;
+import com.fabio.rest.bean.RispostaBean;
+import com.fabio.rest.webClient.WClientConfig;
+
+@Service
+public class ServizioChiamata {
+	@Autowired
+	private WClientConfig config;
+	public ServizioChiamata() {
+		
+	}
+	
+	public RispostaBean getResponse(RichiestaBean richiesta) {
+		RispostaBean risposta=null;
+		try {
+			risposta=config.getResponse(richiesta);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return risposta;
+	}
+}

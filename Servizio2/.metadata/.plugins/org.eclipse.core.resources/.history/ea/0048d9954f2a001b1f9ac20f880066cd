@@ -1,0 +1,9 @@
+package com.fabio.rest.webClient;
+
+public class WClientConfig {
+
+	public WClientConfig() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.fabio.rest.webClient;
+
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.fabio.rest.bean.RichiestaBean;
+import com.fabio.rest.bean.RispostaBean;
+
+public class WClientConfig implements WClientConfigInterface{
+	
+	private WebClient client;
+	public WClientConfig() {
+		client=WebClient.create();
+	}
+	
+	public RispostaBean getResponse(RichiestaBean richiesta) {
+		try {
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	
+
+}

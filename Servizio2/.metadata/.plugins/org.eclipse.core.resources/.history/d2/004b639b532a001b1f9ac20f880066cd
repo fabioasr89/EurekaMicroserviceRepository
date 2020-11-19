@@ -1,0 +1,9 @@
+package com.fabio.rest.controller;
+
+public class CallSericeRestController {
+
+	public CallSericeRestController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

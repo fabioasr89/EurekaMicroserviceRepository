@@ -1,0 +1,30 @@
+package com.fabio.rest.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.fabio.rest.bean.RispostaBean;
+import com.fabio.rest.servizi.ServizioChiamata;
+
+@RestController
+@RequestMapping(value="/CallService/")
+public class CallSericeRestController {
+	
+	Autowired
+	private ServizioChiamata service;
+	
+	public CallSericeRestController() {
+		
+	}
+	@RequestMapping(value="call/{nome}/{cognome}",method=RequestMethod.GET)
+	public RispostaBean getCall() {
+		RispostaBean bean=null;
+		try {
+			
+		}catch(Exception e) {
+			
+		}
+		return bean;
+	}
+}

@@ -1,0 +1,16 @@
+package com.fabio.rest.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(value="/SalutiService/")
+public class ServizioController {
+	
+	public String getSaluti() {
+		try {
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

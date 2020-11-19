@@ -1,0 +1,5 @@
+package com.fabio.rest.webClient;
+
+public interface WClientAdaptorInterface {
+
+}

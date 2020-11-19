@@ -1,0 +1,4 @@
+##impediamo ad eureka di registrare sulla dashboard se stesso
+eureka.client.registerWithEureka = false
+eureka.client.fetchRegistry = false
+server.port = 8761

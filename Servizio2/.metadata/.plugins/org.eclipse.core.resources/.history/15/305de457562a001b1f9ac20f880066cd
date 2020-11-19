@@ -1,0 +1,36 @@
+package com.fabio.rest.webClient;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.fabio.rest.bean.RichiestaBean;
+import com.fabio.rest.bean.RispostaBean;
+
+import reactor.core.publisher.Mono;
+
+public class WClientConfig implements WClientConfigInterface{
+	
+	private WebClient client;
+	private Mono<RispostaBean> response;
+	@Value("${chiamata.servizio1.url}")
+	private String uriBase;
+	public WClientConfig() {
+		client=WebClient.create();
+	}
+	
+	public RispostaBean getResponse(RichiestaBean richiesta) {
+		RispostaBean risposta=null;
+		try {
+			//effettuiamo la chiamata al servizio di benvenuto
+			response=client.get().uri(uriBase+"SalutiService/saluti/{nome}/and/{cognome}",richiesta.getNome(),richiesta.getCognome())
+					.exchange().flatMap(response->response.bodyToMono(RispostaBean.class));
+			risposta=response.block();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return risposta;
+	}
+
+	
+
+}

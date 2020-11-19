@@ -1,0 +1,9 @@
+package com.fabio.rest.servizi;
+
+public class ServizioChiamata {
+
+	public ServizioChiamata() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

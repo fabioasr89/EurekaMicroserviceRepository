@@ -1,0 +1,21 @@
+package com.fabio.rest.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(value="/CallService/")
+public class CallSericeRestController {
+
+	public CallSericeRestController() {
+		
+	}
+	
+	public String getCall() {
+		try {
+			
+		}catch(Exception e) {
+			
+		}
+	}
+}

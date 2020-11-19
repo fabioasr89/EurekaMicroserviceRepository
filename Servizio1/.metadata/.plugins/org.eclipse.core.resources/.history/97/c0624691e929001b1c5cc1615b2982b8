@@ -1,0 +1,13 @@
+package com.fabio.rest.bean;
+
+public class RispostaBean {
+	private String nome;
+	private String cognome;
+	private boolean esito;
+	private String message;
+	
+	public RispostaBean() {
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.fabio.rest.bean;
+
+public class RispostaBean {
+
+	public RispostaBean() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

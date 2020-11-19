@@ -1,0 +1,23 @@
+package com.fabio.rest.webClient;
+
+import com.fabio.rest.bean.RichiestaBean;
+import com.fabio.rest.bean.RispostaBean;
+
+public class WClientConfig implements WClientConfigInterface{
+	
+	public WClientConfig() {
+		
+	}
+	
+	public RispostaBean getResponse(RichiestaBean richiesta) {
+		try {
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	
+
+}
